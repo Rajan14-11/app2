@@ -687,7 +687,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <DeviceMotionEvent>
+            <div>
               <div className="footer-menu">
                 <ul>
                   <li>
@@ -707,7 +707,7 @@ const App = () => {
                   </li>
                 </ul>
               </div>
-            </DeviceMotionEvent>
+            </div>
             {/* </div> */}
           </div>
         </div>
