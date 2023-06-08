@@ -198,7 +198,7 @@ const App = () => {
 
         <div className="whyUs_section">
           <div className="whyUs_image_Section">
-            <img src="/aboutUs.jpg" alt="about"/>
+            <img src="/whyUs.jpg" alt="about"/>
           </div>
           <div className="whyUs_slider">
             <Swiper
@@ -323,7 +323,6 @@ const App = () => {
             className="mySwiper swiperWhy"
           >
             {specialCategories.map((category, index) => (
-              // <SwiperSlide key={index}>
               <SwiperSlide
                 style={{
                   background: "none",
@@ -343,44 +342,8 @@ const App = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              // </SwiperSlide>
             ))}
-            {/* {data.map((item, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div className="slider">
-                    <p
-                      className="font-bold text-4xl text-white"
-                      style={{
-                        fontWeight: 500,
-                        fontSize: "2rem",
-                        margin: 0,
-                      }}
-                    >
-                      {item.id}
-                    </p>
-                    <p
-                      className="text-5xl text-yellow"
-                      style={{
-                        fontSize: "2.3rem",
-                        fontWeight: 700,
-                      }}
-                    >
-                      {item.Reason}
-                    </p>
-                    <p
-                      className="text-lg font-semibold"
-                      style={{
-                        fontSize: "1.5rem",
-                      }}
-                    >
-                      {item.description}
-                    </p>
-                    <div className="pb-10"></div>
-                  </div>
-                </SwiperSlide>
-              );
-            })} */}
+
           </Swiper>
         </div>
       </div>

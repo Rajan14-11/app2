@@ -7,6 +7,12 @@ body {
     rgba(63, 48, 70, 1) 80%
   );
   scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -235,6 +241,7 @@ body {
   padding: 1rem;
   width: 90%;
   margin: auto;
+  padding-top: 5rem;
 }
 .hero_right_section {
   width: 40%;
@@ -374,7 +381,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .whyUs_image_Section{
@@ -405,7 +412,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 96%;
+width: 100%;
 margin: 0 auto;
 height: 100%;
 padding: 1rem;
@@ -464,6 +471,7 @@ color: var(--secondary);
 
 .desc p {
   font-size: 1.3rem;
+  margin-top: 2rem;
   color: var(--secondary);
 }
 
