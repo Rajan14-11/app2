@@ -151,7 +151,7 @@ const App = () => {
             </li>
 
             <li className=" navbar__btn">
-              <a href="#" className="button" id="signup">
+              <a href="#home" className="button" id="signup">
                 Book a Demo
               </a>
             </li>
@@ -180,7 +180,7 @@ const App = () => {
               and analysis
             </p>
             <button className="main__btn">
-              <a href="#">Explore</a>
+              <a href="#home">Explore</a>
             </button>
           </div>
         </div>
@@ -679,35 +679,35 @@ const App = () => {
         <div className="copyright-area">
           <div className="copy_container">
             {/* <div className="row"> */}
-            <div className="">
+            <div>
               <div className="copyright-text">
                 <p>
                   Copyright &copy; 2021, All Right Reserved{" "}
-                  <a href="#">Seclance</a>
+                  <a href="#home">Seclance</a>
                 </p>
               </div>
             </div>
-            <div className="">
+            <DeviceMotionEvent>
               <div className="footer-menu">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#">Terms</a>
+                    <a href="#home">Terms</a>
                   </li>
                   <li>
-                    <a href="#">Privacy</a>
+                    <a href="#home">Privacy</a>
                   </li>
                   <li>
-                    <a href="#">Policy</a>
+                    <a href="#home">Policy</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
-            </div>
+            </DeviceMotionEvent>
             {/* </div> */}
           </div>
         </div>
