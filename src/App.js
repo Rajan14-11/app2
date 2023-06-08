@@ -23,15 +23,6 @@ import "swiper/css/navigation";
 import { Navigation, EffectFade, Autoplay } from "swiper";
 
 const App = () => {
-
-  const [isactive,setIsactive] = useState({
-    home:false,
-    whyUs:false,
-    about:false,
-    services:false,
-    certifications:false,
-    contact:false
-  })
   const[mobileView,setMobileView] = useState(false)
 
   const specialCategories = [
@@ -92,7 +83,7 @@ const App = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <a href="#home" id="logo" className="nav_logo">
-            <img src="/seclancelogo.png" />
+            <img src="/seclancelogo.png" alt="logo"/>
           </a>
           <div
             className={`navbar__toggle ${mobileView ? "is-active" : ""}`}
@@ -107,7 +98,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#home"
-                className={`links ${isactive.home ? "highlight" : ""}`}
+                className={`links`}
                 id="home-page"
               >
                 Home
@@ -116,7 +107,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#whyUs"
-                className={`links ${isactive.whyUs ? "highlight" : ""}`}
+                className={`links`}
                 id="whyUs-page"
               >
                 Why us
@@ -125,7 +116,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#about"
-                className={`links ${isactive.about ? "highlight" : ""}`}
+                className={`links`}
                 id="about-page"
               >
                 About
@@ -134,9 +125,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#certifications"
-                className={`links ${
-                  isactive.certifications ? "highlight" : ""
-                }`}
+                className={`links`}
                 id="certifications-page"
               >
                 Certifications
@@ -145,7 +134,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#services"
-                className={`links ${isactive.services ? "highlight" : ""}`}
+                className={`links`}
                 id="services-page"
               >
                 Services
@@ -154,7 +143,7 @@ const App = () => {
             <li className="items">
               <a
                 href="#contact"
-                className={`links ${isactive.contact ? "highlight" : ""}`}
+                className={`links`}
                 id="contact-page"
               >
                 Contact
@@ -173,7 +162,7 @@ const App = () => {
       <div className="hero" id="home">
         <div className="hero_section">
           <div className="hero_right_section">
-            <img src="/services.gif" />
+            <img src="/services.gif" alt="services" />
           </div>
           <div className="hero__container">
             <h1 className="hero__heading">
@@ -209,7 +198,7 @@ const App = () => {
 
         <div className="whyUs_section">
           <div className="whyUs_image_Section">
-            <img src="/aboutUs.jpg" />
+            <img src="/aboutUs.jpg" alt="about"/>
           </div>
           <div className="whyUs_slider">
             <Swiper
@@ -295,7 +284,7 @@ const App = () => {
             </div>
           </div>
           <div className="right_section">
-            <img src="/aboutUs.jpg" />
+            <img src="/aboutUs.jpg" alt="about"/>
           </div>
         </div>
       </div>
@@ -404,7 +393,7 @@ const App = () => {
             </h1>
           </div>
           <div className="services_cards">
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaUserLock className="card_icon" />
               </div>
@@ -415,40 +404,40 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p data-aos="fade-up" class="description">
+              <div className="card__inner">
+                <p data-aos="fade-up" className="description">
                   <ul style={{ listStyleTtype: "circle", fontSize: "1.1rem" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Penetration Testing (Internal & External)
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Web Application/API/Mobile/ Infrastructure Penetration
                       Testing
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Cloud Penetration Testing{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Adversary Attack Simulation/Intelligence Led Penetration
                       Testing
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       IOT Penetration Testing
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Configuration Reviews
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Secure Code Review{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       SSDLC Review
                     </li>
                   </ul>
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaAsterisk className="card_icon" />
               </div>
@@ -459,21 +448,21 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p class="description">
+              <div className="card__inner">
+                <p className="description">
                   <ul style={{ listStyleTtype: "circle" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Information Security Audit Reviews (ISO 27001, NIST, PCI
                       Compliance)
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Third Party Security Assessment/Review (Vendor Risk
                       Management)
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Cyber Security Posture Assessment
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       {" "}
                       Business Continuity Management and Disaster Recovery
                       Assessment
@@ -482,7 +471,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaExclamationCircle className="card_icon" />
               </div>
@@ -493,26 +482,26 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p class="description">
+              <div className="card__inner">
+                <p className="description">
                   <ul style={{ listStyleTtype: "circle" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Penetration Testing Training{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       DevSecOps Training
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Information Security Awareness Training
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       SOC Training
                     </li>
                   </ul>
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaChessQueen className="card_icon" />
               </div>
@@ -523,23 +512,23 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p class="description">
+              <div className="card__inner">
+                <p className="description">
                   <ul style={{ listStyleTtype: "circle" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Integrating Security in CI-CD Pipeline
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       End-to-End implementation of DevSecOps strategy
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Enhance existing application security to matured state{" "}
                     </li>
                   </ul>
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaLaptop className="card_icon" />
               </div>
@@ -550,20 +539,20 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p class="description">
+              <div className="card__inner">
+                <p className="description">
                   <ul style={{ listStyleTtype: "circle" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Experts in microservices{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Innovative in modularising existing architectures
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Tech-savvy in integrating the cloud power and web
                       solutions
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       {" "}
                       Consistent delivery by following CI/CD approaches
                     </li>
@@ -571,7 +560,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <div className="icon_container">
                 <FaMobile className="card_icon" />
               </div>
@@ -582,24 +571,24 @@ const App = () => {
                 </p>
                 <button className="main__btn">Learn More</button>
               </div>
-              <div class="card__inner">
-                <p class="description">
+              <div className="card__inner">
+                <p className="description">
                   <ul style={{ listStyleTtype: "circle" }}>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       {" "}
                       Custom iOS and Android apps development{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       {" "}
                       Native and cross-platform solutions{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Second platform app development
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       UI/UX design{" "}
                     </li>
-                    <li class="list-description" data-aos="fade-up">
+                    <li className="list-description" data-aos="fade-up">
                       Consulting and prototyping
                     </li>
                   </ul>
@@ -619,7 +608,7 @@ const App = () => {
           </div>
           <div className="partners_cards">
             <div className="partner">
-              <img src="/logo.png" />
+              <img src="/logo.png" alt="logo"/>
             </div>
           </div>
         </div>
@@ -631,7 +620,7 @@ const App = () => {
             <div className="footer_combi">
               <div className="left_part">
                 <div className="contact_logo">
-                  <img src="/seclancelogo.png" />
+                  <img src="/seclancelogo.png" alt="seclancelogo" />
                 </div>
                 <div className="social_icons">
                   <div className="contact_heading">
@@ -687,31 +676,31 @@ const App = () => {
           <div className="footer"></div>
         </div>
 
-        <div class="copyright-area">
-          <div class="copy_container">
-            {/* <div class="row"> */}
-            <div class="">
-              <div class="copyright-text">
+        <div className="copyright-area">
+          <div className="copy_container">
+            {/* <div className="row"> */}
+            <div className="">
+              <div className="copyright-text">
                 <p>
                   Copyright &copy; 2021, All Right Reserved{" "}
-                  <a href="">Seclance</a>
+                  <a href="#">Seclance</a>
                 </p>
               </div>
             </div>
-            <div class="">
-              <div class="footer-menu">
+            <div className="">
+              <div className="footer-menu">
                 <ul>
                   <li>
                     <a href="#">Home</a>
                   </li>
                   <li>
-                    <a href="">Terms</a>
+                    <a href="#">Terms</a>
                   </li>
                   <li>
-                    <a href="">Privacy</a>
+                    <a href="#">Privacy</a>
                   </li>
                   <li>
-                    <a href="">Policy</a>
+                    <a href="#">Policy</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
