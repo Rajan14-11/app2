@@ -75,7 +75,7 @@ body {
 .nav_logo img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .menu {
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   list-style: none;
   justify-content: space-evenly;
-  width: 70%;
+  width: 80%;
 }
 
 .items {
@@ -148,6 +148,9 @@ body {
   }
   .nav_logo{
     width: 40%;
+  }
+  .nav_logo img{
+    object-fit: contain;
   }
 
   .menu {

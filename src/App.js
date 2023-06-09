@@ -83,7 +83,7 @@ const App = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <a href="#home" id="logo" className="nav_logo">
-            <img src="/seclancelogo.png" alt="logo"/>
+            <img src="/mainlogo.png" alt="logo"/>
           </a>
           <div
             className={`navbar__toggle ${mobileView ? "is-active" : ""}`}
@@ -583,7 +583,7 @@ const App = () => {
             <div className="footer_combi">
               <div className="left_part">
                 <div className="contact_logo">
-                  <img src="/seclancelogo.png" alt="seclancelogo" />
+                  <img src="/mainlogo.png" alt="seclancelogo" />
                 </div>
                 <div className="social_icons">
                   <div className="contact_heading">
