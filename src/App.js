@@ -365,7 +365,7 @@ const App = () => {
                 <p>
                   Web Application/API/Mobile/ Infrastructure Penetration Testing
                 </p>
-                <button className="main__btn">Learn More</button>
+                <button className="main__btn learn_more">Learn More</button>
               </div>
               <div className="card__inner">
                 <p data-aos="fade-up" className="description">
