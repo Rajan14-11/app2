@@ -13,6 +13,7 @@ body {
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -169,7 +170,9 @@ body {
     z-index: 99;
     height: fit-content;
     font-size: 1.6rem;
-    width: 102%;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1rem;
   }
   #logo {
     padding-left: 25px;
@@ -232,16 +235,18 @@ body {
     rgba(63, 48, 70, 1) 80%
   );
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .hero_section {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 90%;
   margin: auto;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 .hero_right_section {
   width: 40%;
@@ -345,7 +350,16 @@ body {
   width: 100%;
   /* height: calc(100vh - 80px); */
   height: fit-content;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  padding-top: 2rem;
+   background: rgb(0, 0, 0);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(32, 30, 30, 1) 47%,
+    rgba(63, 48, 70, 1) 80%
+  );
+  width: 100%;
 }
 .heading {
   color: var(--secondary);
@@ -373,6 +387,7 @@ body {
   justify-content: center;
   color: var(--secondary);
   font-size: x-large;
+  padding: 0.2rem;
 }
 
 .whyUs_section{
@@ -381,7 +396,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
 }
 
 .whyUs_image_Section{
@@ -389,17 +404,18 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 30%;
+  width: 40%;
 }
 
 .whyUs_image_Section img{
   width: 100%;
-  height: 75vh;
+  /* height: 75vh; */
+  height: 100%;
   object-fit: cover;
 }
 
 .whyUs_slider{
-  width: 70%;
+  width: 60%;
   height: 100%;
   /* margin: auto; */
   position: absolute;
@@ -451,6 +467,9 @@ color: var(--secondary);
   width: 60%;
   height: 100%;
   padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .desc {
@@ -499,6 +518,14 @@ color: var(--secondary);
   height: fit-content;
   margin-bottom: 5rem;
   margin: auto;
+   background: rgb(0, 0, 0);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(32, 30, 30, 1) 47%,
+    rgba(63, 48, 70, 1) 80%
+  );
+  width: 100%;
 }
 .certification_section {
   height: 25rem !important;
@@ -579,9 +606,17 @@ background: linear-gradient(
   width: 100%;
   min-height: 100%;
   height: fit-content;
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(54,19,79,1) 52%, rgba(0,0,0,1) 90%);
-padding-bottom: 2rem;
+  /* background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(54,19,79,1) 52%, rgba(0,0,0,1) 90%); */
+ background: rgb(0, 0, 0);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(32, 30, 30, 1) 47%,
+    rgba(63, 48, 70, 1) 80%
+  );
+  width: 100%;
+padding: 2rem 0;
 }
 
 .services_section {
@@ -707,7 +742,15 @@ background: var(--gradient-background);
 .partners{
   width: 100%;
   height: fit-content;
-  margin-bottom: 6rem;
+  padding: 2rem 0;
+   background: rgb(0, 0, 0);
+  background: linear-gradient(
+    144deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(32, 30, 30, 1) 47%,
+    rgba(63, 48, 70, 1) 80%
+  );
+  width: 100%;
 }
 
 .partners_section{
@@ -794,11 +837,12 @@ background: var(--gradient-background);
   color: var(--secondary);
   margin: auto;
   justify-content: space-evenly;
+  padding: 0.5rem 0;
 }
 .icon{
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 .icon:hover{
   color: var(--primary);
@@ -821,6 +865,7 @@ background: var(--gradient-background);
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .contact_link{
   list-style: none;
@@ -1026,7 +1071,7 @@ background: var(--gradient-background);
    }
    .whyUs_desc{
     font-size: 1.3rem;
-    padding: 0 0.2rem;
+    padding: 0.2rem;
    }
 
   }
